@@ -20,34 +20,32 @@
                 </div>
         </section>
         <section class="container">
-            <div class="user-text">
-                <h2>Text to translate 👇🏽</h2>
-                <textarea name="" id=""></textarea>
-            </div>
-            <div class="language-options">
-                <form action="submit">
-                    <fieldset>
-                        <legend>Select language 👇🏽</legend>
-            
-                        <label for="">
-                            <input type="radio" name="language"> Swahili 🇰🇪
-                        </label>
-                        
-                        <label for="">
-                            <input type="radio" name="language"> Shona 🇿🇼
-                        </label>
-            
-                        <label for="">
-                            <input type="radio" name="language"> Xhosa 🇿🇦
-                        </label>
-    
-                    </fieldset>
-                    <button>Translate</button>
-                </form>
-            </div>
+            <form id="input-form">
+                <div class="user-text">
+                    <h2>Text to translate 👇🏽</h2>
+                    <textarea name="" id="user-input"></textarea>
+                </div>
+                <div class="language-options" id="language-options">
+                        <fieldset>
+                            <legend>Select language 👇🏽</legend>
+                            <label for="">
+                                <input type="radio" name="language" value="swahili"> Swahili 🇰🇪
+                            </label>
+                            
+                            <label for="">
+                                <input type="radio" name="language" value="shona"> Shona 🇿🇼
+                            </label>
+                
+                            <label for="">
+                                <input type="radio" name="language" value="ndebele"> Ndebele 🇿🇦
+                            </label>
+                        </fieldset>
+                </div>
+                <button type="button" class="translate-btn">Translate</button>
+            </form>
         </section>
     </main>
     <footer></footer>
-    <script src="/src/main.js"></script>
+    <script src="/src/main.js" type="module"></script>
 </body>
 </html>

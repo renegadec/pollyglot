@@ -1,1 +1,10 @@
-src/.DS_Store
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Vite build output
+/dist
+
+# Local npm cache
+/.npm-cache
