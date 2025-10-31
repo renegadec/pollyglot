@@ -55,6 +55,11 @@ main {
     margin: 20px 13px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .user-text > h2, .translation-response {
     font-size: 1.25rem;
     font-weight: 700;
@@ -101,17 +106,48 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-button {
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+button.translate-btn, button.start-over-btn  {
     border: none;
     border-radius: 6px;
     background: #035A9D;
-    padding: 15px 100px;
+    padding: 15px auto;
     font-family: inherit;
     font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
 }
 
+button.start-over-btn {
+    display: none;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 30px;
+    line-height: 1.2em;
+    height:1.2em;
+    overflow: hidden;
+  }
+  .loader:before {
+    content:"Translating...\A⌰ranslating...\A⌰⍜anslating...\A⌰⍜⏃dnslating...\A⌰⍜⏃⎅slating...\A⌰⍜⏃⎅lating...\A⌰⍜⏃⎅⟟⋏ating...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; 
+    white-space: pre;
+    display: inline-block;
+    animation: l39 1s infinite steps(11) alternate;
+  }
+  
+  @keyframes l39 {
+    100%{transform: translateY(-100%)}
+  }
 
 @media (min-width: 502px) {
     main {
