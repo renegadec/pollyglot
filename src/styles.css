@@ -120,6 +120,7 @@ button.translate-btn, button.start-over-btn  {
     font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 button.start-over-btn {
